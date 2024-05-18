@@ -42,27 +42,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className + ` flex w-full relative`}>
-        <DynamicContextProvider
-          settings={{
-            environmentId: process.env.NEXT_PUBLIC_DYNAMIC_ENVIROMENT_ID!,
-            walletConnectors: [EthereumWalletConnectors],
-          }}
-        >
-          <Providers>
-            <DynamicWagmiConnector>
-              <GetPageProvider>
-                <GetUserDataProvider>
-                  <ToastContainer />
-                  <Sidebar />
-                  <Header />
-                  {children}
-                  <AudioControlBar />
-                  <LoginModal />
-                </GetUserDataProvider>
-              </GetPageProvider>
-            </DynamicWagmiConnector>
-          </Providers>
-        </DynamicContextProvider>
+        <Providers>
+          <GetPageProvider>
+            <GetUserDataProvider>
+              <ToastContainer />
+              <Sidebar />
+              <Header />
+              {children}
+              <AudioControlBar />
+              <LoginModal />
+            </GetUserDataProvider>
+          </GetPageProvider>
+        </Providers>
       </body>
     </html>
   );
