@@ -52,13 +52,25 @@ const GetUserDataProvider: React.FC<{ children: React.ReactNode }> = ({
       console.log("user", user.userId);
       const userD = await getUserData(user.userId);
       setUserData(userD);
+    } else {
+      setUserData({
+        name: "",
+        userId: "",
+        email: "",
+        userWallet: "",
+        bio: "",
+        followers: [],
+        avatarImgUrl: "",
+        bannerImgUrl: "",
+        twitterUrl: "",
+        discordUrl: "",
+      });
     }
   };
 
   const getAllUser = async () => {
     setGetAllUserLoadingState(true);
     const data = await getAllUserData();
-    console.log("data======>", data);
     setAllUserData(data);
     setGetAllUserLoadingState(false);
   };
