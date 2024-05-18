@@ -1,9 +1,5 @@
 "use client";
-import {
-  MusicDataType,
-  GetUserDataContextValue,
-  UserDataType,
-} from "../types/menu";
+import { GetUserDataContextValue, UserDataType } from "../types/menu";
 import { createContext, useEffect, useMemo, useState } from "react";
 import { getAllUserData, getUserData } from "../utils/api";
 import { useDynamicContext } from "@dynamic-labs/sdk-react-core";

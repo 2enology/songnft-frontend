@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { useContext, useEffect, useRef, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import {
   AddPlayListsIcon,
   HeartIcon,

@@ -16,8 +16,8 @@ import SearchBar from "../../../components/SearchBar";
 import { WaveSpinner } from "react-spinners-kit";
 import { UserDataType } from "../../../types/menu";
 import { createUserData } from "../../../utils/api";
-import { GetUserDataContext } from "@/src/contexts/UserDataContext";
-import { successAlert } from "@/src/components/ToastGroup";
+import { GetUserDataContext } from "../../../contexts/UserDataContext";
+import { successAlert } from "../../../components/ToastGroup";
 
 const Edit: NextPage = () => {
   const { user, isAuthenticated } = useDynamicContext();

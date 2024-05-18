@@ -1,7 +1,6 @@
 import { useContext, useRef } from "react";
 import Image from "next/image";
 import { useDynamicContext } from "@dynamic-labs/sdk-react-core";
-import { GetPageContext } from "../../contexts/PageContext";
 import { useOnClickOutside } from "../../hooks/useOnClickOutside";
 import {
   AccountSettingsIcon,
@@ -10,7 +9,8 @@ import {
   LogoutIcon,
   StarIcon,
 } from "../Svglist";
-import { GetUserDataContext } from "@/src/contexts/UserDataContext";
+import { GetPageContext } from "../../contexts/PageContext";
+import { GetUserDataContext } from "../../contexts/UserDataContext";
 
 export const ProfileDropdown = () => {
   const { showProfileDropdownFunc, showProfileDropdown } =

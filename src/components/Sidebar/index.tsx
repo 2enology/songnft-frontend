@@ -15,7 +15,7 @@ import {
   TelegramIcon,
   TwitterIcon,
 } from "../Svglist";
-import { Menu } from "@/src/types/menu";
+import { Menu } from "../../types/menu";
 
 const Sidebar = () => {
   const { showSidebar, showSidebarFunc } = useContext(GetPageContext);

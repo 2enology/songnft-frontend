@@ -1,24 +1,22 @@
 "use client";
 import dynamic from "next/dynamic";
 import type { Metadata } from "next";
+import { ToastContainer } from "react-toastify";
 import { Inter } from "next/font/google";
 import {
   DynamicContextProvider,
   EthereumWalletConnectors,
   DynamicWagmiConnector,
 } from "../lib/dynamic.js";
-import GetPageProvider from "../contexts/PageContext";
-import { AudioControlBar } from "../components/AudioControlBar";
 import { LoginModal } from "../components/modal/LoginModal";
+import { AudioControlBar } from "../components/AudioControlBar";
+import GetPageProvider from "../contexts/PageContext";
+import GetUserDataProvider from "../contexts/UserDataContext";
+import { SideBarSkeleton } from "../components/Sidebar/skeleton";
+import { Providers } from "./providers";
 import "react-multi-carousel/lib/styles.css";
 import "react-loading-skeleton/dist/skeleton.css";
 import "./globals.css";
-import { Providers } from "./providers";
-import { ProfileDropdown } from "../components/ProfileDropdown";
-import { ToastContainer } from "react-toastify";
-import { useEffect, useState } from "react";
-import GetUserDataProvider from "../contexts/UserDataContext";
-import { SideBarSkeleton } from "../components/Sidebar/skeleton";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {

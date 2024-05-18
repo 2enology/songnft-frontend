@@ -1,11 +1,11 @@
 "use client";
 import { NextPage } from "next";
-import { PostData } from "../Data/data";
-import { ArrowIcon } from "../components/Svglist";
-import { PostCard } from "../models/PostCard";
 import dynamic from "next/dynamic";
+import { ArrowIcon } from "../components/Svglist";
 import { PostBarSkeleton } from "../components/PostBar/postBarSkeleton";
 import { SuggestedFollowSkeleton } from "../components/SuggestedFollow/suggestedFollowSkeleton";
+import { PostCard } from "../models/PostCard";
+import { PostData } from "../Data/data";
 
 const PostBar = dynamic(() => import("../components/PostBar"), {
   ssr: false,
