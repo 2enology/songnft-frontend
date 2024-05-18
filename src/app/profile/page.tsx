@@ -6,7 +6,7 @@ import type { NextPage } from "next";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/navigation";
 import { useDynamicContext } from "@dynamic-labs/sdk-react-core";
-import { GetUserDataContext } from "@/src/contexts/UserDataContext";
+import { GetUserDataContext } from "../../contexts/UserDataContext";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import {
   ChangeIcon,

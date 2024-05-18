@@ -3,7 +3,7 @@
 import React, { useContext } from "react";
 import { SearchIcon } from "../Svglist";
 import { GetPageContext } from "../../contexts/PageContext";
-import { GetUserDataContext } from "@/src/contexts/UserDataContext";
+import { GetUserDataContext } from "../../contexts/UserDataContext";
 import { useDynamicContext } from "@dynamic-labs/sdk-react-core";
 import { ProfileDropdown } from "../ProfileDropdown";
 

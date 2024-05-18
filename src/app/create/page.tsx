@@ -13,10 +13,10 @@ import {
   errorAlert,
   successAlert,
   warningAlert,
-} from "@/src/components/ToastGroup";
-import { NFTMetaDataType } from "@/src/types/menu";
-import { GetUserDataContext } from "@/src/contexts/UserDataContext";
-import { createMusic } from "@/src/utils/api";
+} from "../../components/ToastGroup";
+import { NFTMetaDataType } from "../../types/menu";
+import { GetUserDataContext } from "../../contexts/UserDataContext";
+import { createMusic } from "../../utils/api";
 
 const Create: NextPage = () => {
   const { userData } = useContext(GetUserDataContext);

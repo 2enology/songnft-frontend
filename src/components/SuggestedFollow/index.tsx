@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import { FC, useContext, useEffect, useMemo, useState } from "react";
-import { GetUserDataContext } from "@/src/contexts/UserDataContext";
-import { UserDataType } from "@/src/types/menu";
-import { followUnfollow } from "@/src/utils/api";
+import { GetUserDataContext } from "../../contexts/UserDataContext";
+import { UserDataType } from "../../types/menu";
+import { followUnfollow } from "../../utils/api";
 import { useDynamicContext } from "@dynamic-labs/sdk-react-core";
 
 const SuggestedFollow = () => {

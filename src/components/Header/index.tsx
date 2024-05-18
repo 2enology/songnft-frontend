@@ -6,7 +6,7 @@ import { GetPageContext } from "../../contexts/PageContext";
 import { MobileMenuIcon } from "../Svglist";
 import { useDynamicContext } from "@dynamic-labs/sdk-react-core";
 import { usePathname } from "next/navigation";
-import { GetUserDataContext } from "@/src/contexts/UserDataContext";
+import { GetUserDataContext } from "../../contexts/UserDataContext";
 import { ProfileDropdown } from "../ProfileDropdown";
 
 const Header = () => {

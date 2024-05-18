@@ -7,7 +7,7 @@ import { FaUserAlt } from "react-icons/fa";
 import { GetPageContext } from "../../contexts/PageContext";
 import { PostAddIcon, PostUploadIcon } from "../Svglist";
 import { ProfileDropdown } from "../ProfileDropdown";
-import { GetUserDataContext } from "@/src/contexts/UserDataContext";
+import { GetUserDataContext } from "../../contexts/UserDataContext";
 
 const PostBar = () => {
   const routerPath = usePathname();
