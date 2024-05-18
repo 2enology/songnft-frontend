@@ -49,9 +49,9 @@ export const ProfileDropdown = () => {
             <p className="text-md font-bold text-white">{userData?.name}</p>
             <p className="flex items-center justify-center gap-2">
               <span className="text-sm text-[#6B6B6B]">
-                {userData.userWallet.slice(0, 5) +
+                {userData?.userWallet.slice(0, 5) +
                   "..." +
-                  userData.userWallet.slice(-5)}
+                  userData?.userWallet.slice(-5)}
               </span>
               <span className="cursor-pointer">
                 <CopyIcon />

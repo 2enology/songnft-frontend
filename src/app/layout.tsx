@@ -7,7 +7,6 @@ import {
   EthereumWalletConnectors,
   DynamicWagmiConnector,
 } from "../lib/dynamic.js";
-import { Header } from "../components/Header";
 import GetPageProvider from "../contexts/PageContext";
 import { AudioControlBar } from "../components/AudioControlBar";
 import { LoginModal } from "../components/modal/LoginModal";
@@ -32,6 +31,11 @@ const Sidebar = dynamic(() => import("../components/Sidebar"), {
   loading: () => <SideBarSkeleton />,
 });
 
+const Header = dynamic(() => import("../components/Header"), {
+  ssr: false,
+  loading: () => <></>,
+});
+
 export default function RootLayout({
   children,
 }: {
@@ -50,7 +54,7 @@ export default function RootLayout({
             <DynamicWagmiConnector>
               <GetPageProvider>
                 <GetUserDataProvider>
-                  <ToastContainer style={{ fontSize: 14 }} />
+                  <ToastContainer />
                   <Sidebar />
                   <Header />
                   {children}

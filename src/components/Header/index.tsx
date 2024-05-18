@@ -9,7 +9,7 @@ import { usePathname } from "next/navigation";
 import { GetUserDataContext } from "@/src/contexts/UserDataContext";
 import { ProfileDropdown } from "../ProfileDropdown";
 
-export const Header = () => {
+const Header = () => {
   const routerPath = usePathname();
 
   const { isAuthenticated, setShowAuthFlow } = useDynamicContext();
@@ -68,3 +68,4 @@ export const Header = () => {
     </div>
   );
 };
+export default Header;
